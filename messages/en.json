@@ -1,0 +1,394 @@
+{
+  "meta": {
+    "siteName": "Quad Ride",
+    "siteDescription": "Premium motorcycle rental and luxury tourism circuits with a seamless mobile-first experience.",
+    "home": {
+      "title": "Quad Ride | Premium motorcycle rental",
+      "description": "Discover premium tourism circuits, mobile-first booking, and smooth Mobile Money payment."
+    },
+    "catalog": {
+      "title": "Catalog | Quad Ride",
+      "description": "Browse all premium motorcycle activities and tourism experiences."
+    },
+    "payment": {
+      "title": "Mobile Money Payment | Quad Ride",
+      "description": "Complete your premium reservation through our Mobile Money flow."
+    },
+    "confirmation": {
+      "title": "Reservation Confirmation | Quad Ride",
+      "description": "Your premium reservation has been confirmed."
+    }
+  },
+  "languageSwitcher": {
+    "label": "Change language",
+    "fr": "FR",
+    "en": "EN"
+  },
+  "nav": {
+    "ariaLabel": "Primary navigation",
+    "home": "Home",
+    "catalog": "Catalog",
+    "circuits": "Circuits",
+    "ridingClub": "Riding Club",
+    "viewActivities": "View activities"
+  },
+  "common": {
+    "siteName": "Quad Ride",
+    "viewActivities": "View activities",
+    "viewDetails": "View details",
+    "reserveNow": "Reserve now",
+    "processing": "Processing...",
+    "personSingular": "person",
+    "personPlural": "persons",
+    "paymentMethodMobileMoney": "Mobile Money",
+    "backToCatalog": "Back to catalog",
+    "backHome": "Back home",
+    "browseMoreActivities": "Browse more activities",
+    "openChat": "Open chat"
+  },
+  "home": {
+    "hero": {
+      "badge": "Premium motorcycle tourism",
+      "title": "Ride with prestige. Explore with style.",
+      "subtitle": "High-end motorcycle activities designed for modern travelers, with fast booking and a frictionless experience.",
+      "primaryCta": "View activities",
+      "secondaryCta": "Explore circuits",
+      "imageLabel": "Premium hero image",
+      "stats": {
+        "activitiesValue": "24+",
+        "activitiesLabel": "Activities",
+        "mobileValue": "100%",
+        "mobileLabel": "Mobile-first"
+      }
+    },
+    "activities": {
+      "badge": "Activities",
+      "title": "Premium activity preview",
+      "seeAll": "See all"
+    },
+    "premium": {
+      "badge": "Premium experience",
+      "title": "Luxury service, clear process, complete comfort.",
+      "description": "Each route is crafted for smoothness, safety, and elegance. From booking to return, every step stays clear and refined.",
+      "cta": "View activities",
+      "imageLabel": "Premium experience image"
+    },
+    "circuits": {
+      "badge": "Tourism circuits",
+      "title": "Signature route collection",
+      "cards": {
+        "one": {
+          "title": "Cotonou -> Ouidah -> Cotonou",
+          "label": "Premium cultural loop",
+          "imageLabel": "Ouidah circuit"
+        },
+        "two": {
+          "title": "Cotonou -> Porto-Novo -> Cotonou",
+          "label": "Elegant intercity itinerary",
+          "imageLabel": "Porto-Novo circuit"
+        },
+        "three": {
+          "title": "Jak District Circuit",
+          "label": "Urban lifestyle rhythm",
+          "imageLabel": "Jak district circuit"
+        },
+        "four": {
+          "title": "Sunset Beach Loop",
+          "label": "Premium late-day roadtrip",
+          "imageLabel": "Sunset beach circuit"
+        }
+      }
+    },
+    "club": {
+      "badge": "Riding Club",
+      "title": "Lifestyle sessions for weekend riders.",
+      "description": "Join premium group rides, beach and sand formats, and social routes designed for growth in a high-end setting.",
+      "cta": "Join the club",
+      "imageLabels": {
+        "one": "Riding club lifestyle 01",
+        "two": "Riding club lifestyle 02",
+        "three": "Riding club lifestyle 03"
+      }
+    },
+    "gallery": {
+      "badge": "Gallery preview",
+      "title": "Reserved slots for future premium photography",
+      "imageLabels": {
+        "one": "Premium gallery 01",
+        "two": "Premium gallery 02",
+        "three": "Premium gallery 03",
+        "four": "Premium gallery 04",
+        "five": "Premium gallery 05",
+        "six": "Premium gallery 06",
+        "seven": "Premium gallery 07",
+        "eight": "Premium gallery 08"
+      }
+    }
+  },
+  "catalog": {
+    "badge": "Catalog",
+    "title": "All premium activities",
+    "description": "Browse every available experience with pricing, duration, and route context."
+  },
+  "activityDetail": {
+    "badge": "Activity details",
+    "priceLabel": "Price",
+    "durationLabel": "Duration",
+    "galleryTitle": "Gallery",
+    "detailsTitle": "Details",
+    "includedTitle": "Included features",
+    "requirementsTitle": "Requirements",
+    "reservationTitle": "Reservation",
+    "reservationSubtitle": "Complete this form to continue to Mobile Money payment.",
+    "reserveCta": "Reserve now",
+    "extraImageOne": "Lifestyle detail",
+    "extraImageTwo": "Route detail"
+  },
+  "reservation": {
+    "fields": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "phone": "Phone number",
+      "persons": "Number of persons"
+    },
+    "placeholders": {
+      "firstName": "Your first name",
+      "lastName": "Your last name",
+      "phone": "Ex: +229 00 00 00 00"
+    },
+    "errors": {
+      "firstNameRequired": "First name is required.",
+      "lastNameRequired": "Last name is required.",
+      "phoneRequired": "Phone number is required.",
+      "phoneInvalid": "Invalid phone format.",
+      "personsMin": "Minimum 1 person.",
+      "personsMax": "Maximum 12 persons."
+    },
+    "paymentMethodLabel": "Payment method",
+    "mobileMoneyOnly": "Mobile Money only",
+    "pricePerPersonLabel": "Price per person",
+    "totalLabel": "Total ({count} {personLabel})",
+    "submit": "Reserve now",
+    "submitting": "Processing..."
+  },
+  "payment": {
+    "badge": "Checkout",
+    "title": "Mobile Money payment",
+    "description": "This flow simulates the Mobile Money integration.",
+    "missingDetails": "Missing reservation details. Please restart from the catalog.",
+    "summary": {
+      "activity": "Activity",
+      "duration": "Duration",
+      "persons": "Persons",
+      "customer": "Customer",
+      "phone": "Phone",
+      "paymentMethod": "Method",
+      "total": "Total"
+    },
+    "payButton": "Pay with Mobile Money",
+    "payingButton": "Connecting to Mobile Money...",
+    "secureBadge": "Secure checkout",
+    "secureTitle": "Instant premium flow",
+    "secureDescription": "After validation, you will be redirected to confirmation with your full summary.",
+    "steps": {
+      "one": "Confirm details",
+      "two": "Validate Mobile Money payment",
+      "three": "Receive confirmation"
+    }
+  },
+  "confirmation": {
+    "badge": "Reservation status",
+    "title": "Payment confirmed",
+    "description": "Your reservation is recorded. Keep your reference for support and check-in.",
+    "referenceLabel": "Reservation reference",
+    "summaryUnavailable": "Summary unavailable.",
+    "summary": {
+      "activity": "Activity",
+      "persons": "Persons",
+      "totalPaid": "Total paid",
+      "phone": "Phone"
+    },
+    "browseMore": "Browse more activities",
+    "backHome": "Back home"
+  },
+  "footer": {
+    "tagline": "Premium motorcycle rental and elegant tourism experiences.",
+    "contactTitle": "Contact",
+    "email": "contact@quadride.example",
+    "phone": "+229 00 00 00 00",
+    "location": "Cotonou, Benin",
+    "whatsappTitle": "WhatsApp",
+    "socialTitle": "Social",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "twitter": "X / Twitter"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The requested content is unavailable.",
+    "backToCatalog": "Back to catalog"
+  },
+  "loading": {
+    "badge": "Loading",
+    "title": "Preparing your premium experience",
+    "subtitle": "One moment, we are finalizing your interface."
+  },
+  "activities": {
+    "items": {
+      "coastal-freedom-ride": {
+        "title": "Coastal Freedom Ride",
+        "shortDescription": "A curated coastal route with premium stops and smooth pacing.",
+        "fullDescription": "This premium format blends seafront roads, elegant viewpoints, and polished logistics. It is ideal for riders seeking balanced rhythm and elevated comfort.",
+        "duration": "3h 30m",
+        "location": "Cotonou Coastline",
+        "heroLabel": "Coastal Freedom Ride hero",
+        "includes": [
+          "Dedicated premium motorcycle",
+          "Fuel included",
+          "Safety briefing and route support",
+          "Hydration pack"
+        ],
+        "requirements": [
+          "Valid ID",
+          "Active phone number",
+          "Closed shoes recommended"
+        ],
+        "galleryLabels": [
+          "Coastal road 01",
+          "Premium bike detail",
+          "Beach stop",
+          "Sunset segment",
+          "Rider lifestyle"
+        ]
+      },
+      "ouidah-heritage-circuit": {
+        "title": "Ouidah Heritage Circuit",
+        "shortDescription": "A premium cultural itinerary between Cotonou and Ouidah.",
+        "fullDescription": "This circuit offers a balanced mix of heritage highlights, ride comfort, and curated stops. It is designed for travelers who value depth and smooth execution.",
+        "duration": "5h",
+        "location": "Cotonou - Ouidah - Cotonou",
+        "heroLabel": "Ouidah Heritage Circuit hero",
+        "includes": [
+          "Full round-trip route handling",
+          "Fuel included",
+          "Selected heritage checkpoints",
+          "On-route assistance"
+        ],
+        "requirements": [
+          "Valid ID",
+          "Reservation ideally 24h in advance",
+          "Respect ride guidelines"
+        ],
+        "galleryLabels": [
+          "Ouidah stop 01",
+          "Local architecture",
+          "Group formation",
+          "Road texture",
+          "Golden hour return"
+        ]
+      },
+      "porto-novo-signature-tour": {
+        "title": "Porto-Novo Signature Tour",
+        "shortDescription": "An elegant intercity route with curated urban highlights.",
+        "fullDescription": "Designed for travelers who want a full premium day, this tour combines scenic transitions, cultural pauses, and structured support.",
+        "duration": "6h",
+        "location": "Cotonou - Porto-Novo - Cotonou",
+        "heroLabel": "Porto-Novo Signature Tour hero",
+        "includes": [
+          "Premium route planning",
+          "Fuel included",
+          "Dedicated support contact",
+          "Tourism recommendations"
+        ],
+        "requirements": [
+          "Completed customer profile",
+          "Arrival 20 minutes before departure",
+          "Contract acceptance"
+        ],
+        "galleryLabels": [
+          "Urban gateway",
+          "Cultural spot",
+          "Mechanical detail",
+          "Signature avenue",
+          "Tourism square"
+        ]
+      },
+      "sunset-beach-escape": {
+        "title": "Sunset Beach Escape",
+        "shortDescription": "A premium late-day ride with cinematic atmosphere.",
+        "fullDescription": "A compact format for guests seeking style and efficiency. The route emphasizes smoothness and top visual moments before evening.",
+        "duration": "2h 45m",
+        "location": "Beachfront Loop",
+        "heroLabel": "Sunset Beach Escape hero",
+        "includes": [
+          "Fuel included",
+          "Optimized sunset timing",
+          "Guided route",
+          "Concierge support"
+        ],
+        "requirements": [
+          "Mobile contact available",
+          "Simple reservation profile",
+          "On-time departure"
+        ],
+        "galleryLabels": [
+          "Beach departure",
+          "Lifestyle portrait",
+          "Wheel detail",
+          "Evening road"
+        ]
+      },
+      "urban-riding-club-session": {
+        "title": "Urban Riding Club Session",
+        "shortDescription": "An urban club session focused on premium lifestyle riding.",
+        "fullDescription": "This session mixes urban rhythm, group energy, and social moments in a premium setup for weekend riders.",
+        "duration": "3h",
+        "location": "Cotonou Urban Districts",
+        "heroLabel": "Urban Riding Club Session hero",
+        "includes": [
+          "Club route plan",
+          "Fuel included",
+          "Lead rider coordination",
+          "Lifestyle photo spots"
+        ],
+        "requirements": [
+          "Club reservation required",
+          "Respect group rules",
+          "Mandatory contact number"
+        ],
+        "galleryLabels": [
+          "Urban lane",
+          "Group lineup",
+          "City night mood",
+          "Club stop"
+        ]
+      },
+      "lagoon-discovery-circuit": {
+        "title": "Lagoon Discovery Circuit",
+        "shortDescription": "A premium lagoon itinerary with polished tourism comfort.",
+        "fullDescription": "A calm and refined route around waterside landscapes, with controlled pace and premium logistics for travelers seeking serenity.",
+        "duration": "4h",
+        "location": "Lagoon Area",
+        "heroLabel": "Lagoon Discovery Circuit hero",
+        "includes": [
+          "Dedicated lagoon itinerary",
+          "Fuel included",
+          "Circuit support",
+          "Planned refreshment break"
+        ],
+        "requirements": [
+          "Basic customer details",
+          "Accepted agreement",
+          "Presence before departure"
+        ],
+        "galleryLabels": [
+          "Lagoon edge",
+          "Bridge crossing",
+          "Helmet detail",
+          "Panoramic lane",
+          "Calm stop"
+        ]
+      }
+    }
+  }
+}

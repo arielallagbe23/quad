@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --font-inter: "Inter";
+  --font-playfair: "Playfair Display";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f5f7fa;
+  color: #18202a;
+  font-family: var(--font-inter), Inter, ui-sans-serif, system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container-luxe {
+  width: min(100% - 1.5rem, 1200px);
+  margin-inline: auto;
+}
+
+.section-pad {
+  padding-block: clamp(3.25rem, 9vw, 6.5rem);
+}
+
+.heading-xl {
+  font-family: var(--font-playfair), "Playfair Display", ui-serif, Georgia, serif;
+  font-size: clamp(2rem, 8vw, 4.25rem);
+  line-height: 1.04;
+  letter-spacing: -0.01em;
+}
+
+.heading-lg {
+  font-family: var(--font-playfair), "Playfair Display", ui-serif, Georgia, serif;
+  font-size: clamp(1.55rem, 5.5vw, 3rem);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+}
+
+.heading-md {
+  font-family: var(--font-playfair), "Playfair Display", ui-serif, Georgia, serif;
+  font-size: clamp(1.25rem, 4.25vw, 1.8rem);
+  line-height: 1.15;
+}
+
+.lime-blue-accent {
+  background: linear-gradient(120deg, rgba(198, 255, 0, 0.2), rgba(10, 37, 64, 0.16));
+}
+
+.image-grid {
+  background-image: linear-gradient(rgba(10, 37, 64, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10, 37, 64, 0.08) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.placeholder-shimmer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 0%, rgba(255, 255, 255, 0.35) 50%, transparent 100%);
+  animation: shimmer 2.1s infinite;
+}
+
+:focus-visible {
+  outline: 2px solid #0a2540;
+  outline-offset: 2px;
+}
