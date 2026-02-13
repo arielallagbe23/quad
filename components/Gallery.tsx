@@ -4,6 +4,7 @@ import ImagePlaceholder from "@/components/ImagePlaceholder";
 type GalleryItem = {
   label: string;
   ratio: PlaceholderRatio;
+  src?: string;
 };
 
 type GalleryProps = {
@@ -18,6 +19,7 @@ export default function Gallery({ items }: GalleryProps) {
           key={`${item.label}-${index}`}
           ratio={item.ratio}
           label={item.label}
+          src={item.src}
           className={index % 5 === 0 ? "col-span-2" : ""}
         />
       ))}

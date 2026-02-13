@@ -30,7 +30,9 @@
     "catalog": "Catalogue",
     "circuits": "Circuits",
     "ridingClub": "Riding Club",
-    "viewActivities": "Voir les activites"
+    "viewActivities": "Voir les activites",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
   },
   "common": {
     "siteName": "Quad Ride",

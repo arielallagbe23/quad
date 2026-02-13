@@ -5,6 +5,7 @@ import type { Activity } from "@/lib/activities";
 import { formatPrice } from "@/lib/format";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import { useLocale, useTranslations } from "@/components/providers/I18nProvider";
+import { getActivityCardPhotoPath } from "@/lib/photoPaths";
 
 type ActivityCardProps = {
   activity: Activity;
@@ -18,7 +19,7 @@ export default function ActivityCard({ activity, showDuration = true }: Activity
 
   return (
     <article className="group flex h-full flex-col rounded-3xl border border-line bg-white p-4 shadow-soft transition-all duration-300 ease-premium hover:-translate-y-1 hover:border-navy/25 sm:p-5">
-      <ImagePlaceholder ratio="16:9" label={tActivity("heroLabel")} />
+      <ImagePlaceholder ratio="16:9" label={tActivity("heroLabel")} src={getActivityCardPhotoPath(activity.slug)} />
 
       <div className="mt-4 space-y-2">
         <h3 className="heading-md text-ink">{tActivity("title")}</h3>

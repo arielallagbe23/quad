@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import { useLocale, useTranslations } from "@/components/providers/I18nProvider";
+import { homePhotoPaths } from "@/lib/photoPaths";
 
 export default function HeroSection() {
   const locale = useLocale();
@@ -48,7 +49,7 @@ export default function HeroSection() {
           transition={{ duration: 0.55, delay: 0.1, ease: [0.2, 0.8, 0.2, 1] }}
           className="space-y-4"
         >
-          <ImagePlaceholder ratio="4:5" label={t("imageLabel")} dark className="w-full" />
+          <ImagePlaceholder ratio="4:5" label={t("imageLabel")} src={homePhotoPaths.heroMain} dark className="w-full" />
           <div className="grid grid-cols-2 gap-3">
             <div className="rounded-3xl border border-white/20 bg-white/8 p-4">
               <p className="text-xl font-semibold">{t("stats.activitiesValue")}</p>

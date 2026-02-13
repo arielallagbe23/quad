@@ -12,6 +12,7 @@ import { formatPrice } from "@/lib/format";
 import { defaultLocale, isLocale, locales } from "@/lib/i18n/config";
 import { createLocaleAlternates } from "@/lib/i18n/metadata";
 import { getMessages } from "@/lib/i18n/messages";
+import { activityCommonPhotoPaths, getActivityGalleryPhotoPath, getActivityHeroPhotoPath } from "@/lib/photoPaths";
 import { resolveLocale } from "@/lib/i18n/request";
 import { createTranslator, getStringArray } from "@/lib/i18n/translate";
 
@@ -70,7 +71,8 @@ export default function ActivityDetailsPage({ params }: ActivityDetailsPageProps
 
   const galleryItems = activity.galleryRatios.map((ratio, index) => ({
     ratio,
-    label: galleryLabels[index] ?? tActivity("heroLabel")
+    label: galleryLabels[index] ?? tActivity("heroLabel"),
+    src: getActivityGalleryPhotoPath(activity.slug, index, ratio)
   }));
 
   return (
@@ -80,7 +82,12 @@ export default function ActivityDetailsPage({ params }: ActivityDetailsPageProps
         <section className="section-pad">
           <div className="container-luxe grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
             <SectionReveal>
-              <ImagePlaceholder ratio="16:9" label={tActivity("heroLabel")} className="w-full" />
+              <ImagePlaceholder
+                ratio="16:9"
+                label={tActivity("heroLabel")}
+                src={getActivityHeroPhotoPath(activity.slug)}
+                className="w-full"
+              />
             </SectionReveal>
 
             <SectionReveal delay={0.08} className="space-y-4 rounded-3xl border border-line bg-white p-5 shadow-soft sm:p-6">
@@ -148,8 +155,12 @@ export default function ActivityDetailsPage({ params }: ActivityDetailsPageProps
               </div>
 
               <div className="grid grid-cols-2 gap-3">
-                <ImagePlaceholder ratio="1:1" label={t("activityDetail.extraImageOne")} />
-                <ImagePlaceholder ratio="1:1" label={t("activityDetail.extraImageTwo")} />
+                <ImagePlaceholder
+                  ratio="1:1"
+                  label={t("activityDetail.extraImageOne")}
+                  src={activityCommonPhotoPaths.detailLifestyle}
+                />
+                <ImagePlaceholder ratio="1:1" label={t("activityDetail.extraImageTwo")} src={activityCommonPhotoPaths.detailRoute} />
               </div>
             </SectionReveal>
 

@@ -30,7 +30,9 @@
     "catalog": "Catalog",
     "circuits": "Circuits",
     "ridingClub": "Riding Club",
-    "viewActivities": "View activities"
+    "viewActivities": "View activities",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "common": {
     "siteName": "Quad Ride",

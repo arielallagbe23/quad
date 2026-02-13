@@ -11,6 +11,7 @@ import { activities } from "@/lib/activities";
 import { defaultLocale, isLocale } from "@/lib/i18n/config";
 import { createLocaleAlternates } from "@/lib/i18n/metadata";
 import { getMessages } from "@/lib/i18n/messages";
+import { homePhotoPaths } from "@/lib/photoPaths";
 import { resolveLocale } from "@/lib/i18n/request";
 import { createTranslator } from "@/lib/i18n/translate";
 
@@ -45,14 +46,14 @@ export default function HomePage({ params }: HomePageProps) {
   const t = createTranslator(messages);
 
   const galleryItems = [
-    { label: t("home.gallery.imageLabels.one"), ratio: "16:9" as const },
-    { label: t("home.gallery.imageLabels.two"), ratio: "4:5" as const },
-    { label: t("home.gallery.imageLabels.three"), ratio: "1:1" as const },
-    { label: t("home.gallery.imageLabels.four"), ratio: "16:9" as const },
-    { label: t("home.gallery.imageLabels.five"), ratio: "4:5" as const },
-    { label: t("home.gallery.imageLabels.six"), ratio: "1:1" as const },
-    { label: t("home.gallery.imageLabels.seven"), ratio: "16:9" as const },
-    { label: t("home.gallery.imageLabels.eight"), ratio: "4:5" as const }
+    { label: t("home.gallery.imageLabels.one"), ratio: "16:9" as const, src: homePhotoPaths.gallery[0] },
+    { label: t("home.gallery.imageLabels.two"), ratio: "4:5" as const, src: homePhotoPaths.gallery[1] },
+    { label: t("home.gallery.imageLabels.three"), ratio: "1:1" as const, src: homePhotoPaths.gallery[2] },
+    { label: t("home.gallery.imageLabels.four"), ratio: "16:9" as const, src: homePhotoPaths.gallery[3] },
+    { label: t("home.gallery.imageLabels.five"), ratio: "4:5" as const, src: homePhotoPaths.gallery[4] },
+    { label: t("home.gallery.imageLabels.six"), ratio: "1:1" as const, src: homePhotoPaths.gallery[5] },
+    { label: t("home.gallery.imageLabels.seven"), ratio: "16:9" as const, src: homePhotoPaths.gallery[6] },
+    { label: t("home.gallery.imageLabels.eight"), ratio: "4:5" as const, src: homePhotoPaths.gallery[7] }
   ];
 
   return (
@@ -100,7 +101,12 @@ export default function HomePage({ params }: HomePageProps) {
             </SectionReveal>
 
             <SectionReveal delay={0.1}>
-              <ImagePlaceholder ratio="16:9" label={t("home.premium.imageLabel")} className="w-full" />
+              <ImagePlaceholder
+                ratio="16:9"
+                label={t("home.premium.imageLabel")}
+                src={homePhotoPaths.premiumExperience}
+                className="w-full"
+              />
             </SectionReveal>
           </div>
         </section>
@@ -119,7 +125,11 @@ export default function HomePage({ params }: HomePageProps) {
                   delay={index * 0.06}
                   className="min-w-[78vw] snap-start rounded-3xl border border-line bg-white p-4 shadow-soft sm:min-w-[320px]"
                 >
-                  <ImagePlaceholder ratio="4:5" label={t(`home.circuits.cards.${id}.imageLabel`)} />
+                  <ImagePlaceholder
+                    ratio="4:5"
+                    label={t(`home.circuits.cards.${id}.imageLabel`)}
+                    src={homePhotoPaths.circuits[id]}
+                  />
                   <p className="mt-4 heading-md text-ink">{t(`home.circuits.cards.${id}.title`)}</p>
                   <p className="mt-2 text-sm text-ink/68">{t(`home.circuits.cards.${id}.label`)}</p>
                 </SectionReveal>
@@ -143,9 +153,15 @@ export default function HomePage({ params }: HomePageProps) {
             </SectionReveal>
 
             <SectionReveal delay={0.1} className="grid grid-cols-2 gap-3">
-              <ImagePlaceholder ratio="4:5" label={t("home.club.imageLabels.one")} dark />
-              <ImagePlaceholder ratio="4:5" label={t("home.club.imageLabels.two")} dark />
-              <ImagePlaceholder ratio="16:9" label={t("home.club.imageLabels.three")} dark className="col-span-2" />
+              <ImagePlaceholder ratio="4:5" label={t("home.club.imageLabels.one")} src={homePhotoPaths.club.one} dark />
+              <ImagePlaceholder ratio="4:5" label={t("home.club.imageLabels.two")} src={homePhotoPaths.club.two} dark />
+              <ImagePlaceholder
+                ratio="16:9"
+                label={t("home.club.imageLabels.three")}
+                src={homePhotoPaths.club.three}
+                dark
+                className="col-span-2"
+              />
             </SectionReveal>
           </div>
         </section>
